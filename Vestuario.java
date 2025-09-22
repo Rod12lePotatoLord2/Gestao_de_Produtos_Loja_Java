@@ -9,8 +9,16 @@ public class Vestuario extends Produto {
     }
 
     public void mostrarDados() {
-        super.mostrarDados(); // Exibe os dados da superclasse
+        super.mostrarDados();
         System.out.println("Tamanho: " + tamanho);
         System.out.println("Cor: " + cor);
+    }
+
+    public void mostrarDados(boolean exibirCor) {
+        super.mostrarDados();
+        System.out.println("Tamanho: " + tamanho);
+        if (exibirCor) {
+            System.out.println("Cor: " + cor);
+        }
     }
 }

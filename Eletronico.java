@@ -10,4 +10,13 @@ public class Eletronico extends Produto {
         super.mostrarDados();
         System.out.println("Garantia: " + garantia + " meses");
     }
+
+    public void mostrarDados(boolean exibirEmAnos) {
+        super.mostrarDados();
+        if (exibirEmAnos) {
+            System.out.println("Garantia: " + (garantia / 12) + " anos");
+        } else {
+            System.out.println("Garantia: " + garantia + " meses");
+        }
+    }
 }
